@@ -1,1 +1,191 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ग्राम पंचायत संग्रामपुरा – सरपंच प्रत्याशी</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Hind:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#f7f5ee;--surf:#fff;--ink:#1b2a4a;--mute:#5b6678;--g:#1f5d3a;--gs:#dcebe1;--y:#e8a317;--line:#d9d6c8;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121a14;--surf:#1b261e;--ink:#eef0e6;--mute:#a3b0a6;--g:#6fcf97;--gs:#25382b;--y:#f2b83a;--line:#33433a}}
+:root[data-theme="dark"]{--bg:#121a14;--surf:#1b261e;--ink:#eef0e6;--mute:#a3b0a6;--g:#6fcf97;--gs:#25382b;--y:#f2b83a;--line:#33433a}
+*{box-sizing:border-box}html{scroll-padding-top:70px;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.7 Hind,"Noto Sans Devanagari",sans-serif}
+h1,h2,h3{font-family:"Yatra One","Noto Serif Devanagari",serif;font-weight:400;line-height:1.3;margin:0}
+a{color:var(--g)}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--g);display:flex;gap:4px;overflow-x:auto;padding:6px 10px}
+nav a{color:#fff;text-decoration:none;padding:6px 12px;border-radius:20px;white-space:nowrap;font-size:15px}
+nav a:hover,nav a:focus-visible{background:rgba(255,255,255,.2);outline:2px solid #fff}
+.wrap{max-width:900px;margin:auto;padding:0 18px}
+header{background:var(--g);color:#fff;padding:36px 0 40px;border-bottom:8px solid var(--y)}
+header .wrap{display:grid;gap:22px;grid-template-columns:130px 1fr;align-items:center}
+.photo{width:130px;height:130px;border-radius:50%;background:#fff2;border:4px solid var(--y);display:grid;place-items:center;font:56px "Yatra One",serif}
+header h1{font-size:clamp(26px,6vw,44px)}
+header p{margin:6px 0 0;opacity:.92}
+.sym{display:inline-block;margin-top:12px;background:var(--y);color:#1b2a4a;padding:4px 14px;border-radius:6px;font-weight:600}
+@media(max-width:560px){header .wrap{grid-template-columns:1fr;justify-items:center;text-align:center}}
+section{padding:36px 0 6px}
+h2{font-size:27px;color:var(--g);border-bottom:3px solid var(--y);display:inline-block;margin-bottom:16px}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:var(--surf);border:1px solid var(--line);border-left:5px solid var(--g);border-radius:6px;padding:14px 16px}
+.card h3{font-size:19px;margin-bottom:4px}.card p{margin:0;color:var(--mute);font-size:15.5px}
+.tag{display:inline-block;font-size:13px;background:var(--gs);color:var(--ink);padding:0 10px;border-radius:12px;margin-bottom:4px}
+.tot{background:var(--y);color:#1b2a4a;padding:14px 18px;border-radius:6px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-weight:600;margin-bottom:14px}
+.tot b{font:26px "Yatra One",serif}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.chips button{font:inherit;font-size:14.5px;border:1px solid var(--g);background:var(--surf);color:var(--ink);padding:4px 14px;border-radius:20px;cursor:pointer}
+.chips button[aria-pressed=true]{background:var(--g);color:#fff}
+.bars>div{margin:6px 0;font-size:14.5px}
+.bar{height:10px;background:var(--gs);border-radius:5px;overflow:hidden}.bar i{display:block;height:100%;background:var(--g)}
+.scroll{overflow-x:auto;margin-top:14px}
+table{width:100%;border-collapse:collapse;background:var(--surf);min-width:520px}
+th,td{padding:9px 12px;text-align:left;border-bottom:1px solid var(--line);font-size:15.5px}
+th{background:var(--gs)}td.r,th.r{text-align:right}
+.note{font-size:14px;color:var(--mute)}
+form{display:grid;gap:10px;max-width:520px}
+input,textarea,select{font:inherit;padding:10px;border:1px solid var(--line);border-radius:6px;background:var(--surf);color:var(--ink);width:100%}
+.btn{font:inherit;font-weight:600;background:var(--g);color:#fff;border:0;border-radius:6px;padding:11px 18px;cursor:pointer;text-decoration:none;display:inline-block}
+.btn:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,.chips button:focus-visible{outline:3px solid var(--y);outline-offset:2px}
+.num{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px dashed var(--line)}
+.soc a{display:flex;flex-direction:column;text-decoration:none;color:var(--ink)}.soc b{color:var(--g)}
+details{background:var(--surf);border:1px solid var(--line);border-radius:6px;padding:10px 14px;margin-bottom:8px}summary{cursor:pointer;font-weight:600}
+footer{margin-top:40px;background:var(--g);color:#fff;padding:22px 0;text-align:center;font-size:14.5px}
+#editBtn{position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:9;box-shadow:0 2px 8px #0005;background:var(--y);color:#1b2a4a}
+#admin{background:var(--surf);border:2px solid var(--y);border-radius:8px;padding:16px;margin:24px 0}
+#admin label{display:block;font-weight:600;margin:12px 0 2px}#admin small{color:var(--mute);display:block;font-weight:400}
+#admin textarea{font-size:14.5px;line-height:1.5}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+ <div class="photo" id="ph" data-r></div>
+ <div><h1 id="cName" data-r></h1><p id="cLine" data-r></p><p id="cSlogan" data-r></p><span class="sym" id="cSym" data-r></span></div>
+</div></header>
+<nav id="nav" data-r aria-label="मेनू"></nav>
+<main class="wrap">
+<section id="parichay"><h2>परिचय</h2><p id="about" data-r></p></section>
+<section id="sankalp"><h2>मेरे संकल्प</h2><div class="grid" id="pledges" data-r></div></section>
+<section id="kharcha"><h2>मेरा चुनावी खर्चा</h2>
+ <p>हर रुपये का हिसाब सबके सामने।</p>
+ <div class="tot"><span id="totLbl" data-r></span><b id="tot" data-r></b></div>
+ <div class="chips" id="chips" data-r role="group" aria-label="श्रेणी चुनें"></div>
+ <div class="bars" id="bars" data-r></div>
+ <div class="scroll"><table><thead><tr><th>तारीख</th><th>श्रेणी</th><th>विवरण</th><th class="r">रकम (₹)</th></tr></thead><tbody id="rows" data-r></tbody></table></div>
+</section>
+<section id="works" hidden><h2>विकास कार्य</h2><div class="grid" id="worksL" data-r></div></section>
+<section id="yojana"><h2>सरकारी योजनाएँ</h2><p>इन योजनाओं के फॉर्म भरवाने में मैं मदद करूँगा।</p><div class="grid" id="schemes" data-r></div></section>
+<section id="sabha"><h2>ग्राम सभा और सूचना</h2><div class="grid" id="notices" data-r></div></section>
+<section id="dates" hidden><h2>ज़रूरी तारीखें</h2><div id="datesL" data-r></div></section>
+<section id="faq" hidden><h2>अक्सर पूछे जाने वाले सवाल</h2><div id="faqL" data-r></div></section>
+<section id="sujhav"><h2>शिकायत / सुझाव भेजें</h2>
+ <form id="f">
+  <input id="fn" placeholder="आपका नाम" required>
+  <select id="ft"><option>सुझाव</option><option>शिकायत</option><option>सड़क / नाली</option><option>पानी / बिजली</option><option>पेंशन / राशन</option></select>
+  <textarea id="fm" rows="4" placeholder="अपनी बात लिखें" required></textarea>
+  <button class="btn" type="submit">व्हाट्सऐप पर भेजें</button>
+ </form>
+</section>
+<section id="social"><h2>सोशल मीडिया</h2><div class="grid soc" id="socL" data-r></div></section>
+<section id="sampark"><h2>संपर्क और ज़रूरी नंबर</h2><div id="contacts" data-r></div></section>
+</main>
+<footer><div class="wrap" id="foot" data-r></div></footer>
 
+
+<script>
+/* ============ यहाँ अपनी जानकारी बदलें ============ */
+const S={
+ c:{
+  name:"आपका नाम",
+  gp:"ग्राम पंचायत संग्रामपुरा",
+  block:"आपका ब्लॉक",
+  dist:"आपका ज़िला",
+  sym:"चुनाव चिह्न: आपका चिह्न",
+  slogan:"आपका एक वोट, संग्रामपुरा का विकास",
+  phone:"9999999999",
+  wa:"919999999999",
+  about:"मैं संग्रामपुरा का ही बेटा हूँ। मेरा मकसद है कि पंचायत का हर काम खुले में हो, हर रुपये का हिसाब सबको दिखे और सरकारी योजनाओं का लाभ हर पात्र परिवार तक पहुँचे। आपके आशीर्वाद से मैं सरपंच पद के लिए चुनाव लड़ रहा हूँ।",
+ },
+ /* हर लाइन में एक: शीर्षक | विवरण */
+ pledges:`पक्की सड़क और नाली | गाँव की हर गली में पक्की सड़क और पानी निकासी।
+साफ पीने का पानी | हर घर तक नल से जल और हैंडपंप की मरम्मत।
+शिक्षा | स्कूल में सुविधाएँ, बेटियों की पढ़ाई में मदद।
+रोज़गार | मनरेगा में समय पर काम और मज़दूरी का भुगतान।
+पारदर्शिता | पंचायत का हर खर्चा नोटिस बोर्ड और इस वेबसाइट पर।
+स्वास्थ्य | स्वास्थ्य शिविर और आयुष्मान कार्ड बनवाने में मदद।`,
+ /* हर लाइन में एक: तारीख(YYYY-MM-DD) | श्रेणी | विवरण | रकम */
+ expenses:`2026-10-01 | पोस्टर / बैनर | पोस्टर छपाई (नमूना) | 3500
+2026-10-03 | प्रचार वाहन | जीप किराया (नमूना) | 4500
+2026-10-05 | जनसभा | टेंट और माइक (नमूना) | 2800`,
+ /* प्लेटफॉर्म | हैंडल | लिंक (https://...) */
+ social:`WhatsApp | 9999999999 | https://wa.me/919999999999
+Facebook | आपका पेज | 
+Instagram | @आपकाहैंडल | 
+YouTube | आपका चैनल | 
+Telegram | @आपकाहैंडल | `,
+ /* काम | स्थिति | विवरण */
+ works:`गाँव की मुख्य सड़क | प्रस्तावित | यहाँ विवरण लिखें`,
+ /* नाम | विवरण */
+ schemes:`मनरेगा | 100 दिन का रोज़गार जॉब कार्ड से।
+प्रधानमंत्री आवास योजना | पात्र परिवारों को पक्का मकान।
+पेंशन (वृद्धावस्था / विधवा / दिव्यांग) | हर महीने पेंशन, आधार से जुड़ा खाता ज़रूरी।
+राशन कार्ड | सस्ता अनाज, नाम जुड़वाना या सुधार।
+आयुष्मान भारत | परिवार को स्वास्थ्य बीमा कार्ड।
+जल जीवन मिशन | हर घर नल कनेक्शन।
+स्वच्छ भारत मिशन | शौचालय निर्माण के लिए सहायता।
+पीएम किसान सम्मान निधि | किसानों को सालाना सहायता।`,
+ /* शीर्षक | विवरण */
+ notices:`ग्राम सभा बैठक | तारीख और जगह यहाँ लिखें।
+खुली चर्चा | पंचायत के काम और खर्चे पर सवाल पूछने का दिन।
+मतदाता सूची | पंचायत भवन में देखें।`,
+ /* तारीख | कार्यक्रम */
+ dates:`यहाँ तारीख लिखें | नामांकन
+यहाँ तारीख लिखें | मतदान`,
+ /* सवाल | जवाब */
+ faq:`सरपंच का कार्यकाल कितना होता है? | पाँच साल।
+ग्राम सभा क्या है? | गाँव के सभी मतदाताओं की सभा, जहाँ पंचायत के काम पर चर्चा होती है।`,
+ /* छिपे फीचर: true करने पर दिखेंगे */
+ show:{works:false,faq:false,dates:false}
+};
+/* ================================================== */
+const $=id=>document.getElementById(id),inr=n=>"₹ "+n.toLocaleString("en-IN");
+const esc=s=>String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const url=u=>/^https?:\/\//i.test(u||"")?u:"";
+const P=t=>String(t||"").split("\n").map(l=>l.split("|").map(x=>x.trim())).filter(a=>a[0]);
+const cards=t=>P(t).map(a=>'<div class="card"><h3>'+esc(a[0])+'</h3><p>'+esc(a[1])+'</p></div>').join("");
+let cat="सभी";
+
+function render(){
+ const c=S.c;
+ $("ph").textContent=(c.name||"स")[0];
+ $("cName").textContent="सरपंच प्रत्याशी: "+c.name;
+ $("cLine").textContent=c.gp+", "+c.block+", "+c.dist;
+ $("cSlogan").textContent=c.slogan;$("cSym").textContent=c.sym;$("about").textContent=c.about;
+ $("pledges").innerHTML=cards(S.pledges);$("schemes").innerHTML=cards(S.schemes);$("notices").innerHTML=cards(S.notices);
+ $("worksL").innerHTML=P(S.works).map(a=>'<div class="card"><span class="tag">'+esc(a[1])+'</span><h3>'+esc(a[0])+'</h3><p>'+esc(a[2])+'</p></div>').join("");
+ $("faqL").innerHTML=P(S.faq).map(a=>'<details><summary>'+esc(a[0])+'</summary><p>'+esc(a[1])+'</p></details>').join("");
+ $("datesL").innerHTML=P(S.dates).map(a=>'<div class="num"><b>'+esc(a[0])+'</b><span>'+esc(a[1])+'</span></div>').join("");
+ ["works","faq","dates"].forEach(k=>$(k).hidden=!S.show[k]);
+ $("socL").innerHTML=P(S.social).map(a=>{const u=url(a[2]);const t='<span class="note">'+esc(a[0])+'</span><b>'+esc(a[1])+'</b>';return u?'<a class="card" href="'+esc(u)+'" target="_blank" rel="noopener">'+t+'</a>':'<div class="card">'+t+'</div>'}).join("");
+ $("contacts").innerHTML='<div class="num"><span>'+esc(c.name)+'</span><a href="tel:'+esc(c.phone)+'">'+esc(c.phone)+'</a></div><div class="num"><span>पुलिस</span><b>112</b></div><div class="num"><span>एम्बुलेंस</span><b>108</b></div><div class="num"><span>महिला हेल्पलाइन</span><b>181</b></div>';
+ $("foot").textContent="© "+c.name+" – सरपंच प्रत्याशी, "+c.gp+". "+c.slogan;
+ const nav=[["parichay","परिचय"],["sankalp","संकल्प"],["kharcha","मेरा खर्चा"],["works","विकास कार्य"],["yojana","योजनाएँ"],["sabha","ग्राम सभा"],["dates","तारीखें"],["faq","सवाल"],["sujhav","सुझाव"],["social","सोशल मीडिया"],["sampark","संपर्क"]];
+ $("nav").innerHTML=nav.filter(n=>!$(n[0]).hidden).map(n=>'<a href="#'+n[0]+'">'+n[1]+'</a>').join("");
+ drawExp();
+}
+function drawExp(){
+ const E=P(S.expenses).map(a=>[a[0]||"",a[1]||"",a[2]||"",Number(String(a[3]||"0").replace(/,/g,""))||0]);
+ const cats=["सभी",...new Set(E.map(d=>d[1]))];if(!cats.includes(cat))cat="सभी";
+ const sum=a=>a.reduce((s,d)=>s+d[3],0),all=sum(E),rows=E.filter(d=>cat=="सभी"||d[1]==cat);
+ $("totLbl").textContent=cat=="सभी"?"कुल खर्चा":"कुल खर्चा: "+cat;$("tot").textContent=inr(sum(rows));
+ $("chips").innerHTML=cats.map(x=>'<button aria-pressed="'+(x==cat)+'" data-c="'+esc(x)+'">'+esc(x)+'</button>').join("");
+ $("bars").innerHTML=cats.slice(1).map(x=>{const s=sum(E.filter(d=>d[1]==x));return '<div>'+esc(x)+' — '+inr(s)+'<div class="bar"><i style="width:'+(all?s/all*100:0)+'%"></i></div></div>'}).join("");
+ $("rows").innerHTML=rows.map(d=>'<tr><td>'+esc(d[0].split("-").reverse().join("/"))+'</td><td>'+esc(d[1])+'</td><td>'+esc(d[2])+'</td><td class="r">'+d[3].toLocaleString("en-IN")+'</td></tr>').join("")||'<tr><td colspan="4">अभी कोई खर्चा दर्ज नहीं है।</td></tr>';
+}
+$("chips").addEventListener("click",e=>{const b=e.target.closest("button");if(b){cat=b.dataset.c;drawExp()}});
+$("f").addEventListener("submit",e=>{e.preventDefault();
+ window.open("https://wa.me/"+S.c.wa+"?text="+encodeURIComponent("*"+$("ft").value+"*\nनाम: "+$("fn").value+"\n"+$("fm").value),"_blank")});
+render();
+
+</script>
+</body>
+</html>
